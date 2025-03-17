@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Skills </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- Favicon Links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- External Styles and Scripts -->
+    <link href="./output.css" rel="stylesheet"> <!-- Tailwind CSS compiled output -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script> <!-- GitHub buttons script -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <!-- Lottie animation player -->
+    <script src="main.js"></script> <!-- Custom JavaScript for interactivity -->
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-800">
+    
+    <!-- Skills Section: Contains the Lottie animation and Skills content -->
+    <section id="skills" class="bg-gray-50 dark:bg-gray-800 mt-[-8rem] rounded-lg">
+       
+        <!-- Main container for the Skills section -->
+        <!-- --tw-space-x is defined here to control spacing for ALL columns and rows in this section -->     
+        <!-- This ensures all rows (in IDE & Editors, Frameworks, and future subsections) have the same spacing -->
+        <div class="max-w-screen-xl px-4 py-6 mx-auto space-y-8 lg:space-y-20 lg:py-20 lg:px-6" style="--tw-space-x: 5rem;">
+           
+            <!-- Row: Grid layout with Lottie animation on the left and Skills content on the right -->
+            <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-320">
+                
+                <!-- Lottie Animation: Displays a smaller animation on the left side -->
+                <div class="lg:mt-0 lg:flex">
+                    <lottie-player 
+                        src="./images/SKILLS-New.json" 
+                        background="transparent" 
+                        speed="0.7" 
+                        style="width: 75%; height: 75%;" 
+                        loop 
+                        autoplay>
+                    </lottie-player>
+                </div>
+
+                <!-- Skills Content -->
+                <!-- for moving the skills to top with negetive value  -->
+                <div class="relative" style="top: -9.85rem;">
+                    <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+                        
+                        <!-- Section Heading -->
+                        <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-black" style="font-size: 1.4rem;">Skills</h2>
+                        
+                        <!-- IDE & Editors Subsection -->
+                        <div class="relative" style="top: -0.41rem;">
+                            <p class="mb-4 font-bold lg:text-2xl tracking-tight text-gray-900 dark:text-black" style="font-size: 1.2rem;">IDE & Editors :</p>
+                            <hr class="border-gray-200 dark:border-gray-700 my-3 border-t-2 w-full" style="top: -0.6rem; position: relative;">
+                        </div>
+
+                        <!-- which creates 3 columns kist-->
+                        <div class="my-4">
+                            
+                            <!--Row 1-->
+                            <ul role="list" class="flex space-x-[--tw-space-x] mb-5 border-gray-200 dark:border-gray-700">
+                                
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem; white-space: nowrap;">Snoop Tool</span>
+                                </li>
+
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Load Runner</span>
+                                </li>
+
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Postman</span>
+                                </li>
+                                
+                            </ul>
+
+                            <!--Row 2-->
+                            <ul role="list" class="flex space-x-[--tw-space-x] mb-5 border-gray-200 dark:border-gray-700">
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">SQL Server Management Studio</span>
+                                </li>
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Informatica MDM Power Center</span>
+                                </li>
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Qlik Sense</span>
+                                </li>
+                            </ul>
+
+                            <!-- Row 3-->
+                            <ul role="list" class="flex space-x-[--tw-space-x] mb-5 border-gray-200 dark:border-gray-700">
+                                
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Qlik View</span>
+                                </li>
+
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Qlik View</span>
+                                </li>
+
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Qlik View</span>
+                                </li>
+
+                            </ul>
+
+                            <!-- Row 4 -->
+                            <ul role="list" class="flex space-x-[--tw-space-x] mb-5 border-gray-200 dark:border-gray-700">
+                               
+                                <li class="flex space-x-2 w-full min-w-0">
+                                        <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Qlik View</span>
+                                </li>
+                                
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Qlik View</span>
+                                </li>
+
+                                <li class="flex space-x-2 w-full min-w-0">
+                                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                  <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="font-size: 1rem;">Qlik View</span>
+                                </li>
+
+                            </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white dark:bg-gray-800">
+        <div class="text-center p-4 py-[0.75rem] mx-auto lg:py-[2rem] md:p-8 lg:p-10">
+            <span class="text-xl">Created by Sai Nikhil Bogisetty.</span>
+        </div>
+    </footer>
+
+</body>
+</html>

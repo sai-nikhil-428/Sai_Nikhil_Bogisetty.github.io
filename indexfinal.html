@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Nikhil's Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+ <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="./output.css" rel="stylesheet">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="main.js"></script>
+
+    <body>
+        <header class="fixed w-full bg-white dark:bg-gray-900 ">
+            <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+
+                <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+                    <a href="#home" class="flex items-center">
+                        <img src="images/logo.png" class="h-6 mr-3 sm:h-9" alt="G Logo" />
+                        <span class="title-name self-center text-xl font-semibold whitespace-nowrap dark:text-white">&lt;Sai Nikhil Bogisetty /&gt;</span>
+                    </a>
+
+                    <div class="flex items-center lg:order-2">
+                        <a href="Files/Sai_Nikhil_ETL_QA.pdf" target="_blank" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-lg px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">View Resume</a>
+
+                        <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </button>
+
+                    </div>
+
+                    <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                        
+                        <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0" style="--text-size: 7rem;">
+                           
+                            <li>
+                                <a href="about.html" target="_blank" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" data-title="About"> About </a>
+                            </li>
+
+                            <li>
+                                <a href="education.html" target="_blank" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" data-title="Education" > Education </a>
+                            </li>
+
+                            <li>
+                                <a href="skills.html" target="_blank" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" data-title="Skills" > Skills </a>
+                            </li>
+
+                            <li>
+                                <a href="#experience" target="_blank" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" data-title="Experience"> Experience </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#projects" target="_blank" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" data-title="Projects" > Projects </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#contact" target="_blank" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" data-title="Contact" > Contact </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+<!-- Start block -->
+<section id="home" class="bg-white dark:bg-gray-900">
+    <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+        <!-- Text Section -->
+        <div class="mr-auto place-self-center lg:col-span-7">
+            <h1 class="title-name max-w-2xl mb-8 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">Sai Nikhil Bogisetty</h1>
+            
+            <!-- Paragraph Section -->
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 leading-relaxed break-words" 
+               style="word-spacing: -1.5px; margin-top: 20px;">
+                
+                <!-- Comment: Word spacing reduced to -1.5px for slight tightening of space between words -->
+                <!-- Comment: Margin-top increased to 20px to add space between paragraph and the element above -->
+                <!-- Comment: leading-relaxed and break-words classes are used in the p tag to improve line height and prevent text from overflowing the container -->
+
+                I am a passionate ETL QA Lead with 4+ years of experience in test automation by bringing expertise in 
+                Selenium WebDriver, Java, Python, SQL & API testing with tools like Postman and JMeter. My hands-on
+                skills include working in Agile environments by developing automated testing frameworks & integrating
+                tests into CI/CD pipelines using Jenkins & Git. I have executed regression testing and validated 
+                AI/ML solutions for data quality and compliance. Additionally, I’ve collaborated with cross-functional
+                teams on ETL processes,Master Data Management (MDM) with Informatica & performance testing.
+                <br>
+                <br>
+
+                I am certified in ISTQB Foundation Level v4.0. I have a strong background 
+                in API testing with Postman, REST API tools, public cloud platforms & defect management.
+            </p>
+
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                Currently, I am pursuing my master's degree in computer science at Northern Arizona University, where 
+                I am enhancing my skills and knowledge in data lakes, data pipelines, and informatica MDM. I am also 
+                certified in information privacy and security in research and social, behavioral, and education research 
+                by CITI Program.
+            </p>
+
+                    <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+                        <a href="https://github.com/sai-nikhil-428" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                            <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>GitHub
+                        </a> 
+                        <a href="https://www.linkedin.com/in/sainikhilb" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                            <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>LinkedIn
+                        </a>
+                        <a href="mailto:sainikhilb.11@gmail.com" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                            <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>Email
+                        </a>
+                        <a href="Files/Sai_Nikhil_ETL_QA.pdf" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                            <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg>View Resume
+                        </a>
+                        <a href="tel:+15052106936" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                            <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>Call Me
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:mt-0 lg:col-span-5 lg:flex">
+                    <!-- <img src="./images/hero.png" alt="hero image"> -->
+                    <lottie-player src="images/Home.json"  background="transparent"  speed="0.7" loop autoplay></lottie-player>
+                </div>                
+            </div>
+        </section>
+<!-- End block -->   
+
+    <!-- Start block -->
+    <section id="about" class="bg-gray-50 dark:bg-gray-800 mt-[-4rem]  rounded-lg" >
+        <div class="max-w-screen-xl px-4 py-6 mx-auto space-y-8 lg:space-y-20 lg:py-20 lg:px-6">
+            <!-- Row -->
+            <div class="items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 lg:grid lg:grid-cols-2">
+                <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">About Me</h2>
+                    <p class="mb-8 font-light lg:text-xl">ETL Automation Testing & Datawarehouse Testing | Agile Certified | API Testing | MDM Testing | ETL Test Engineer Analyst - Royal Mail Group @Accenture | Senior Software Engineer - Chubb Insurance @ Capgemini</p>
+                    <lottie-player src="images/about.json"  background="transparent"  speed="0.7" loop autoplay></lottie-player>
+                    <!-- List -->
+
+                </div>
+                <div class="text-gray-700 sm:text-lg dark:text-gray-400">
+                    <!-- <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/feature-1.png" alt="dashboard feature image"> -->
+                    <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
+                        
+                        <li class="flex space-x-3" style="align-items: flex-start; margin-bottom: 10px;">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="display: inline-block; max-width: calc(100% - 25px); text-align: justify;">
+                                With  5+ Years experienced in Full Software Development Life Cycle (SDLC)
+                                by including requirement gathering, designing & executing test cases & defect management in 
+                                Agile &  Waterfall methodologies for BI Reporting & Data warehouse projects
+                                in Insurance Domain Projects under Financial Services.
+                            </span>
+                        </li>
+                        
+                        <li class="flex space-x-3" style="align-items: flex-start; margin-bottom: 10px;">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="display: inline-block; max-width: calc(100% - 25px); text-align: justify;">
+                               5+ years of hands-on experience in Automation Testing including Selenium 
+                               WebDriver, Java, Python & API testing like Postman & REST API tools.
+                            </span>
+                        </li>                        
+                    
+                        <li class="flex space-x-3" style="align-items: flex-start; margin-bottom: 10px;">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="display: inline-block; max-width: calc(100% - 25px); text-align: justify;">
+                                Skilled in creating test scripts for Selenium automation testing & have proven expertise in executing 
+                                Automation Test Scripts through test cases by focusing on ETL Testing, Retesting, and Regression Testing 
+                                while leveraging SQL queries & Test Planning to ensure high-quality outcomes.
+                            </span>
+                        </li>         
+                        
+                        <li class="flex space-x-3" style="align-items: flex-start; margin-bottom: 10px;">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="display: inline-block; max-width: calc(100% - 25px); text-align: justify;">
+                                Extensive experience in MDM (Master Data Management) with focus on data integrity
+                                & performance on particularly with Informatica MDM & integration tools.
+                            </span>
+                        </li>        
+                        
+                        <li class="flex space-x-3" style="align-items: flex-start; margin-bottom: 10px;">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="display: inline-block; max-width: calc(100% - 25px); text-align: justify;">
+                                Strong Expertise in Black box/white Box testing, writing acceptance test scripts using 
+                                Cucumber based Gherkin formatted test scripts for easier test automation to achieve readability 
+                                & understandability as part of Behavior Driven Development (BDD) approach and writing automation 
+                                testing using Java & Selenium by building tools.
+                            </span>
+                        </li>
+
+                        <li class="flex space-x-3" style="align-items: flex-start; margin-bottom: 10px;">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="display: inline-block; max-width: calc(100% - 25px); text-align: justify;">
+                                Experience in working with Agile & Scrum framework using JIRA tool suchin Sprint Planning & 
+                                carrying out sprints, stand-up calls, retrospective, story pointing, & user story-grooming 
+                                by managing software defects using bug tracking tools to analyze performance using Postman API.
+                            </span>
+                        </li>
+
+                        <li class="flex space-x-3" style="align-items: flex-start; margin-bottom: 10px;">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="display: inline-block; max-width: calc(100% - 25px); text-align: justify;">
+                                Formal presentations and consolidation of status reports for both daily & weekly as well as project 
+                                closure reports to be communicated to various stakeholders including onsite leads, clients, different 
+                                vendors, developers, and BA on a daily basis for innovative business needs in backlog management.
+                            </span>
+                        </li>
+
+                        <li class="flex space-x-3" style="align-items: flex-start; margin-bottom: 10px;">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white" style="display: inline-block; max-width: calc(100% - 25px); text-align: justify;">
+                                Worked with software development and testing team members to design and develop robust solutions 
+                                to meet client requirements for functionality, scalability and performance.
+                            </span>
+                        </li>
+                </ul>
+                </div>
+            </div>
+
+            <!-- Row -->
+            <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-20">
+                <lottie-player src="images/SKILLS-New.json"  background="transparent" speed="0.7" loop autoplay></lottie-player>
+                <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h2 class="mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-black">Skills</h2>
+                    <div class="relative" style="top: 0.8rem;">
+                        <p class="mb-3 font-bold lg:text-2xl tracking-tight text-gray-900 dark:text-black" style="font-size: 1.2rem;"> Technical Skills</p>
+                    </div> 
+
+                    <!-- List -->
+                 <ul role="list" class="pt-6 space-y-4 border-t border-gray-200 my-5 dark:border-gray-700" style="columns: 3; -webkit-columns: 3; -moz-columns: 3;">
+                        <li class="flex space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                          </svg>
+                          <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Quality Assurance Testing</span>
+                        </li>
+
+                        <li class="flex space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                          </svg>
+                          <span class="text-base font-medium leading-tight text-gray-900 dark:text-white"> Agile Methodologies</span>
+                        </li>
+
+                        <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                             </svg>
+                             <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Software Testing Life Cycle </span>    
+                           </li>
+
+                           <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                             </svg>
+                             <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Software Testing Life Cycle </span>    
+                           </li>
+
+                           <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                             </svg>
+                             <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Software Testing Life Cycle </span>    
+                           </li>
+                    
+                           <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                             </svg>
+                             <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Software Testing Life Cycle </span>    
+                           </li>
+
+                           <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                             </svg>
+                             <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Software Testing Life Cycle </span>    
+                           </li>
+
+                        <!-- Add the remaining elements in a similar format -->
+                    </ul>
+<!-- Soft Skills -->
+<div class="relative" style="top: 0.8rem;">
+    <p class="mb-3 font-bold lg:text-2xl tracking-tight text-gray-900 dark:text-black" style="font-size: 1.2rem;">Soft Skills</p>
+</div>                    <!-- List -->
+                    <ul role="list" class="pt-6 space-y-4 border-t border-gray-200 my-5 dark:border-gray-700" style="columns: 3; -webkit-columns: 3; -moz-columns: 3;">
+                        <li class="flex space-x-3">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                          </svg>
+                          <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Problem Solving</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-purple-400">Excellent Communication</span>
+                        </li>
+                          <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Teamwork</span>
+                          </li>
+                          <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Adaptability</span>
+                          </li>
+                          <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Emotional Intelligence</span>
+                          </li>
+                    </ul>
+                      
+                </div>
+            </div>
+        </div>
+      </section>
+    <!-- End block -->
+    <!-- Start block -->
+    <section id="experience" class="bg-white dark:bg-gray-900">
+        <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-8 lg:px-6">
+            <div class="col-span-2 mb-8">
+                <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">Experience</h2>
+                <p class="text-lg font-medium text-purple-600 dark:text-purple-500"> I have four years of professional experience working in the Insurance domain.</p>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">With a passion, I work as a software engineer and Kknowledge with a broad variety of platforms, tools, databases, and programming languages. I am a fast learner with a great desire to always learn new things and better myself. I'm excited to pick up new skills and adjust to new surroundings. I possess an extensive skill set that addresses key areas in the field of software engineering filed. I am capable in adjusting to new tools and technologies very fast.</p>
+            </div>
+            <div class="col-span-2 space-y-8 md:gap-12 md:space-y-0">
+                <lottie-player src="images/experience.json"  background="transparent"  speed="0.7" loop autoplay></lottie-player>
+            </div>
+        </div>
+
+        <div class="flex flex-col p-6 mx-6 mb-3 text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div class="lightPurpleBg">
+            <h3 class="mb-4 text-2xl font-semibold">Senior Software Engineer at Capgemini India Pvt. Ltd.</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Mumbai, India. </p>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">MAR 2019 – AUG 2021. </p>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Worked on the Privileged Account Manager product, using Python, C, TypeScript, and Angular to develop high quality code.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Achieved a 90% development time reduction and 50% code size reduction while improving performance by
+                        developing an XML Schema-driven UI.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Optimized front-end for 30% faster loading and improved scalability and performance by developing configuration
+                        components with C and Angular.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Optimized product functionality by developing REST APIs for numerous modules such as access control, users &
+                        groups etc.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Analyzed data by applying Random Forest and other ML algorithms and designed a web dashboard for
+                        visualizing insights by collaborating with a 3-person team.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Optimized the software development process by conducting integration testing, promptly addressing change
+                        requests, performing meticulous code reviews, and ensuring swift bug resolution.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Enhanced user experience by implementing robust client-side validation using JavaScript and jQuery, resulting in
+                        reduced error rates and improved data integrity.</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="flex flex-col p-6 mx-6 mb-3 text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div class="lightPurpleBg">
+            <h3 class="mb-4 text-2xl font-semibold"> ETL Test Engineer Analyst at Accenture India Pvt. Ltd </h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Mumbai, India. </p>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">AUG 2021 – JUL 2022. </p>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Worked on the Change Guardian product, using C++, Java, and JavaScript to develop high-quality code.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Cut setup time by 55% & enabled seamless integration with multiple platforms by developing a silent installer for the
+                        log collection app.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Developed REST APIs, resolved bugs, and provided documentation for Change Guardian to enforce security
+                        policies and compliance measures in an Agile development environment.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Ensured high uptime and supported a large user base by developing ConfigPro, a full-stack web application
+                        utilizing C++ and JavaScript.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Boosted application usability and user engagement by initiating UI modifications and spearheading the development
+                        of new application features.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Facilitated efficient project development by actively participating in an agile development environment, including
+                        sprint planning, daily stand-up meetings, and retrospectives.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Streamlined project workflows by incorporating Jenkins for continuous integration, improving build and
+                        deployment efficiency</span>
+                </li>
+
+            </ul>
+        </div>
+
+    </section>
+    <!-- End block -->
+    <!-- Start block -->
+    <section id="education" class="bg-white dark:bg-gray-900">
+        <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-8 lg:px-6">
+            <div class="col-span-2 mb-8">
+                <lottie-player src="images/education.json"  background="transparent"  speed="0.7" loop autoplay></lottie-player>
+            </div>
+            
+            <div class="col-span-2 space-y-8 md:gap-12 md:space-y-0">
+                <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">Education</h2>
+                <li class="flex space-x-3 mb-6">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                        I hold a <strong> Master's Degree </strong> in Computer Science from <strong>Northern Arizona University </strong> 
+                        which is located in <strong> Flagstaff, AZ, USA </strong>
+                        <div class="mt-4 mb-6">
+                            <strong>Graduation Day</strong> : May 2024.
+                        </div>
+                    </span>
+                </li>
+                
+                <li class="flex space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                        I hold a <strong> Bachelor's Degree </strong> in Computer Science from <strong> Gitam University </strong> 
+                        which is located in <strong> Hyderabad, India </strong>
+                        <div class="mt-4">
+                            <strong>Graduation Day</strong> : April 2018.
+                        </div>
+                    </span>
+                </li>                
+
+            </div>
+            
+        </div>
+
+        <div class="flex flex-col p-6 mx-6 mb-3 text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div class="lightPurpleBg">
+            <h3 class="mb-4 text-2xl font-semibold">Master of Science in Computer Science</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Northern Arizona University, Flagstaff</p>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Aug 2022 - May 2024</p>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>GPA: 3.3/4.0</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Relevant Coursework: Artificial Intelligence, Large Scale Data Structures, Data Mining and Machine Learning.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Graduate Research: Researched clock synchronization in mobile wireless ad hoc Raspberry Pi’s for asynchronous data collection, with a focus on networked data logging, under the supervision of Dr. Kyle Winfree in Wearable Informatics Lab.</span>
+                </li>
+            </ul>
+            <a href="Files/SaiNikhil_Bogisetty_MastersTranscript.pdf" target="_blank" class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">View Transcript</a>
+        </div>
+        <div class="flex flex-col p-6 mx-6 mb-3 text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div class="lightPurpleBg">
+            <h3 class="mb-4 text-2xl font-semibold">Bachelor of Engineering in Computer Science. </h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400"> Gitam University, Hyderabad, India</p>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400"> Aug 2014 - April 2018</p>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>GPA: 3.0/4.0</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Relevant Coursework: VLSI ASIC Design, Artificial Neural Networks, Automotive Electronics, Operating Systems.</span>
+                </li>
+            </ul>
+            <a href="Files/Sai Nikhil Provincinal Degree Certificate.pdf" target="_blank" class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">View Transcript</a>
+        </div>
+    </section>
+    <!-- End block -->
+
+    <!-- Start block -->
+    <section id="projects" class="bg-gray-50 dark:bg-gray-800">
+        <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-8 lg:px-6">
+            <div class="col-span-2 mb-8">
+                <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">Publications</h2>
+                <p class="text-lg font-medium text-purple-600 dark:text-purple-500">Making no-fuss compiler fuzzing effective</p>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">I have collaborated with two researchers from CMU and my supervisor, a professor from NAU, on a research paper that has been published.</p>
+                <p class="my-7 font-light text-gray-500 sm:text-xl dark:text-gray-400">We present a paper on enhancing fuzzing techniques for bug detection in complex compilers. Our method combines mutation testing, program splicing, and advanced fuzzing (e.g., AFL). Through controlled studies, we demonstrate significant qualitative and quantitative improvements in bug discovery. Over 100 confirmed and fixed bugs in production compilers were reported using our approach, including a security bounty-winning bug in the Solidity compiler. Click the link below to read the published paper.</p>
+                <a class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center" href="https://doi.org/10.1145/3497776.3517765" target="_blank">View Published Paper</a>
+            </div>
+            <div class="col-span-2 space-y-8 md:gap-12 md:space-y-0">
+                <lottie-player src="images/publications.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+            </div>
+        </div>
+    <!-- </section> -->
+    <!-- End block -->
+    <!-- Start block -->
+    <!-- <section class="bg-white dark:bg-gray-900"> -->
+        <div class="bg-white dark:bg-gray-900 max-w-screen-xl px-4 py-8 mx-auto lg:py-8 lg:px-6">
+            <div class="max-w-screen-md mx-auto mb-8 text-center lg:mb-12">
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Projects</h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Check out my GitHub profile to explore my projects firsthand. Witness the depth of my coding expertise and creativity in action.</p>
+            </div>
+            <div class="space-y-8 sm:gap-6 xl:gap-10 lg:space-y-0">
+                <!-- Pricing Card -->
+                <div class="flex flex-col max-w-lg p-6 mx-auto text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <!-- List -->
+                    <a href="http://www.github.com/sai-nikhil-428" class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">View Projects on GitHub</a>
+                </div>
+                <!-- Pricing Card -->
+            </div>
+        </div>
+    </section>
+    <!-- End block -->
+
+    <section id="Awards & Certifications" class="bg-white dark:bg-gray-900">
+        <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-8 lg:px-6">
+            <div class="col-span-2 mb-8">
+                <lottie-player src="./images/community.json"  background="transparent"  speed="0.7" loop autoplay></lottie-player>
+            </div>
+            <div class="col-span-2 space-y-8 md:gap-12 md:space-y-0">
+                <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">Awards & Certifications</h2>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Experienced Software Developer with a passion for building community. I leverage technology to build, engage, and enrich communities, through thoughtful code and project leadership. My portfolio not only showcases my technical proficiencies, but also my volunteer work and organizational activities, underscoring my commitment to making a meaningful social impact through technology.</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col p-6 mx-6 mb-3 text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div class="lightPurpleBg">
+            <h3 class="mb-4 text-2xl font-semibold">Volunteering</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Teacher at Northern Arizona University, Flagstaff</p>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Python Crash Course</p>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Organized and instructed Python to 40+ students at Northern Arizona University.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Dialogue that encouraged critical thinking and problem-solving abilities.</span>
+                </li>
+            </ul>
+            <a href="Files/Sai_Nikhil_ETL_QA.pdf" target="_blank" class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">View Response</a>
+        </div>
+        <div class="flex flex-col p-6 mx-6 mb-3 text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div class="lightPurpleBg">
+            <h3 class="mb-4 text-2xl font-semibold">NAU Computer Science Club</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">President</p>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">January 2023 - May 2023</p>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Founded and served as the President of the NAU Computer Science Club in Spring 2023.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Formed a team of dedicated individuals and oversaw the organization toward achieving its objectives.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Oversaw the Meet and Leet event, a weekly competitive programming honing event with an average attendance of 50-60 students.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Conducted and led the Ascend Workshops, technical workshops covering various topics and programming languages.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Organized social Meet and Greet events, creating a sense of community and networking opportunities for members.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Hosted spotlight events featuring industry professionals who provided insights and interacted with club members to enhance their knowledge and career opportunities.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Worked closely with faculty and staff to enhance club activities and member opportunities.</span>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col p-6 mx-6 mb-3 text-center text-gray-900 bg-white border border-gray-100 rounded-lg shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+            <div class="lightPurpleBg">
+            <h3 class="mb-4 text-2xl font-semibold">NAU Hiking Club</h3>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Secretary</p>
+            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">August 2022 - May 2023</p>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Increased club awareness and member count by 50% through the use of social media. </span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Created, posted, and managed comments on all online material for the club's social media.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Developed informative miniseries for new hikers and backpackers; hiking 101 and backpacking 101</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <!-- Icon -->
+                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                    <span>Led groups of 25+ people on day hikes to 20+ locations, including Sedona, Mt. Humphreys, the Grand Canyon, etc.</span>
+                </li>
+            </ul>
+            <a href="https://drive.google.com/file/d/17h_QViBzccc9SxeXcRHnYJQrX1gFccRt/view" target="_blank" class="my-6 text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">View Hiking 101</a>
+            <a href="https://drive.google.com/file/d/1aNdCdbApzLE9O-cukbgzqqChdSnsLhId/view" target="_blank" class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-purple-900">View Backpacking 101</a>
+
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white dark:bg-gray-900">
+        <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-8 lg:px-6">
+            <div class="col-span-2 mb-8">
+                <lottie-player src="images/contact.json"  background="transparent"  speed="0.7" loop autoplay></lottie-player>
+            </div>
+            <div class="col-span-2 space-y-8 md:gap-12 md:space-y-0">
+                <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">Contact Me</h2>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Looking for software Testing related to ETL and Agile Methodologies and any Industry related Knwoledge? Get in touch with me now!</p>
+                <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+                    <a href="https://www.linkedin.com/in/sainikhilb" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                        <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>LinkedIn
+                    </a>
+                    <a href="mailto:sainikhilb.1123@gmail.com" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                        <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>Email
+                    </a>
+                    <a href="Sai_Nikhil_ETL_QA.pdf" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                        <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg>View Resume
+                    </a>
+                    <a href="tel:+15052106936" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-3 mb-2 mr-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:w-auto focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                        <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>Call Me
+                    </a>
+                </div>
+                <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">Address</h2>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Flagstaff, Arizona, United States</p>
+                <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">Phone</h2>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">+1 (505) 210 6936</p>
+                <h2 class="mt-3 mb-4 text-3xl font-extrabold tracking-tight text-gray-900 md:text-3xl dark:text-white">Email</h2>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">sainikhilb.1123@gmail.com</p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- End block -->
+    <footer class="bg-white dark:bg-gray-800">
+        <div class="text-center p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+            Created by Sai Nikhil Bogisetty.
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+
+</body>
+</html>

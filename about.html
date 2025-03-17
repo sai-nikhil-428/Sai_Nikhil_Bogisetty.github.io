@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> About Me </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .left-content {
+            width: 48%; /* Adjusted to give space for the right content */
+            padding-right: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Keep the content aligned at the top */
+        }
+        .right-content {
+            width: 48%; /* Adjusted for more space for the right content */
+            display: flex;
+            flex-direction: column; /* Ensures the list items stack vertically */
+            justify-content: flex-start;
+        }
+        .right-content img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .list-icon {
+            width: 20px;
+            height: 20px;
+            fill: #9b4de3;
+        }
+        h1, h2 {
+            font-weight: bold;
+        }
+        .about-text {
+            font-size: 1.0rem;
+            color: #666;
+            margin-bottom: 18px;
+        }
+        .list-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align the text items beside the image */
+            justify-content: flex-start;
+        }
+        .right-content p {
+            font-size: 15px;
+            line-height: 1.2;
+            text-align: justify;
+            word-wrap: break-word;
+        }
+        .right-content ul {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Left content: Text and Lottie player -->
+        <div class="left-content">
+            <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">About Me</h2>
+            <p class="about-text" style="display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; font-size: 15px; line-height: 1.5; color: #333; word-wrap: break-word;">
+                ETL Automation Testing & Datawarehouse Testing | Agile Certified | API Testing | MDM Testing |
+                ETL Test Engineer Analyst - Royal Mail Group @Accenture | Senior Software Engineer - Chubb Insurance @ Capgemini
+            </p>            
+
+            <lottie-player src="./images/about.json" background="transparent" speed="0.7" loop autoplay></lottie-player>
+        </div>
+
+        <!-- Right content: List items aligned with the image -->
+        <div class="right-content">
+            <div class="list-container">
+                <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
+                    
+                    <li class="list-item" style="display: flex; align-items: flex-start; gap: 10px; text-align: justify; max-width: 100%; margin-bottom: 15px;"> 
+                        <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="width: 16px; height: 16px; margin-top: 4px;">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span style="font-size: 15px; line-height: 1.6; display: inline-block; width: 90%; word-wrap: break-word; color: #333;">
+                            Skilled in creating test scripts for <strong>Selenium automation testing</strong>, I have proven expertise
+                            in executing <strong>Automation Test Scripts </strong> through test cases by focusing on 
+                            <strong>ETL Testing</strong>, <strong>Retesting </strong> & <strong>Regression Testing</strong>
+                            while leveraging <strong>SQL queries </strong> & <strong>Test Planning </strong> to ensure high-quality outcomes.
+                        </span>
+                    </li>
+                    
+                    <li class="list-item" style="display: flex; align-items: flex-start; gap: 10px; text-align: justify; max-width: 100%; margin-bottom: 15px;">
+                        <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="width: 16px; height: 16px; margin-top: 4px;">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span style="font-size: 15px; line-height: 1.6; display: inline-block; width: 90%; word-wrap: break-word; color: #333;">
+                            <strong>5+ years</strong> of hands-on experience in <strong>Automation Testing</strong> 
+                            including <strong>Selenium WebDriver</strong>, <strong>Java</strong>, <strong>Python</strong> & 
+                            <strong>API testing</strong> like <strong>Postman</strong> & <strong>REST API tools</strong>.
+                        </span>
+                    </li>
+
+                    <li class="list-item" style="display: flex; align-items: flex-start; gap: 10px; text-align: justify; max-width: 100%; margin-bottom: 15px;">
+                        <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="width: 16px; height: 16px; margin-top: 4px;">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span style="font-size: 15px; line-height: 1.6; display: inline-block; width: 90%; word-wrap: break-word; color: #333;">
+                            Skilled in creating test scripts for <strong>Selenium automation testing</strong>, I have proven expertise
+                            in executing <strong>Automation Test Scripts </strong> through test cases by focusing on 
+                            <strong>ETL Testing</strong>, <strong>Retesting</strong>, and <strong>Regression Testing</strong>
+                            while leveraging <strong>SQL queries</strong> & <strong>Test Planning</strong> to ensure high-quality outcomes.
+                        </span>
+                    </li>
+
+                    <li class="list-item" style="display: flex; align-items: flex-start; gap: 10px; text-align: justify; max-width: 100%; margin-bottom: 15px;">
+                        <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="width: 16px; height: 16px; margin-top: 4px;">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span style="font-size: 15px; line-height: 1.6; display: inline-block; width: 90%; word-wrap: break-word; color: #333;">
+                         I have extensive experience in <strong> MDM (Master Data Management) </strong> with a focus on data integrity
+                         & performance on particularly with <strong> Informatica MDM </strong> & integration tools.
+                        </span>
+                    </li>
+
+                    <li class="list-item" style="display: flex; align-items: flex-start; gap: 10px; text-align: justify; max-width: 100%; margin-bottom: 15px;">
+                        <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="width: 16px; height: 16px; margin-top: 4px;">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span style="font-size: 15px; line-height: 1.6; display: inline-block; width: 90%; word-wrap: break-word; color: #333;">
+                            Good knowledge in <strong>Python programming </strong> in building scalable web applications 
+                            using <strong> MYSQL </strong> & proficient in <strong> Python OOPS</strong> , <strong> Data Structures </strong>
+                            by using data analysis using libraries like <strong> Pandas, NumPy </strong> & <strong> pymysql </strong> for all
+                            database integrations for large data sets.
+                        </span>
+                    </li>
+
+                    <li class="list-item" style="display: flex; align-items: flex-start; gap: 10px; text-align: justify; max-width: 100%; margin-bottom: 15px;">
+                        <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" style="width: 16px; height: 16px; margin-top: 4px;">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span style="font-size: 15px; line-height: 1.6; display: inline-block; width: 90%; word-wrap: break-word; color: #333;">
+                          Experience in working with <strong> Agile & Scrum framework </strong> using <strong>JIRA tool </strong> 
+                          such in <strong> Sprint Planning & carrying out sprints, stand-up calls, retrospective, story pointing </strong> & <strong> user 
+                          story-grooming </strong> by managing <strong> software defects </strong> using bug tracking 
+                          tools to analyze performance using <strong> Postman API. </strong>
+                        </span>
+                    </li>
+                
+                </ul>
+
+              
+            </div>
+        </div>  
+
+    </div>
+
+   
+
+
+</body>
+
+</html>
