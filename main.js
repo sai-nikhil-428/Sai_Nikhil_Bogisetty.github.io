@@ -1,96 +1,115 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let navLinks = document.querySelectorAll('ul li a');
-    let lastScrollTop = 0;  // Track the last scroll position
-    const navbar = document.querySelector('header');  // Get the header element
+document.addEventListener("DOMContentLoaded", function () {
+    let navLinks = document.querySelectorAll("ul li a");
+    const navbar = document.querySelector("header");
+    let lastScrollTop = 0;
 
-    // Smooth scrolling and dynamic title change on link click
+    // **Smooth scrolling & dynamic title update on link click**
     navLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            // Prevent the default anchor behavior
+        link.addEventListener("click", function (event) {
             event.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
 
-            // If the "About" link is clicked, open the content in a new tab with only the About section
-            if (link.getAttribute('href') === '#about') {
-                // Get the content of the About section
-                const aboutContent = document.querySelector('#about').innerHTML;
-                
-                // Open a new tab and inject the About section content
-                const aboutWindow = window.open('', '_blank');
+            // Open "About" section in a new window
+            if (targetId === "about") {
+                const aboutContent = document.querySelector("#about").innerHTML;
+                const aboutWindow = window.open("", "_blank");
                 aboutWindow.document.write(`
                     <html>
                     <head>
                         <title>About</title>
                         <style>
-                            body {
-                                font-family: Arial, sans-serif;
-                                background-color: #f0f0f0;
-                                margin: 0;
-                                padding: 20px;
-                            }
-                            h1 {
-                                font-size: 2rem;
-                                color: #333;
-                            }
-                            .content {
-                                font-size: 1.2rem;
-                                color: #666;
-                            }
+                            body { font-family: Arial, sans-serif; background: #f0f0f0; padding: 20px; }
+                            h1 { font-size: 2rem; color: #333; }
+                            .content { font-size: 1.2rem; color: #666; }
                         </style>
                     </head>
                     <body>
                         <h1>About Me</h1>
-                        <div class="content">
-                            ${aboutContent}
-                        </div>
+                        <div class="content">${aboutContent}</div>
                     </body>
                     </html>
                 `);
-                aboutWindow.document.close(); // Close the document to render the content
-                return;  // Don't execute the normal navigation code for the "About" link
+                aboutWindow.document.close();
+                return;
             }
 
-            // For other links, smooth scroll and dynamic title change
-            const pageTitle = link.getAttribute('data-title');
-            document.title = pageTitle;
+            // Change page title dynamically
+            document.title = link.getAttribute("data-title") || "Website";
 
-            const targetId = link.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-
+            // Smooth scroll to the section
             if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 50, // Adjust this offset if needed
-                    behavior: 'smooth',
-                });
+                window.scrollTo({ top: targetElement.offsetTop - 50, behavior: "smooth" });
             }
         });
     });
 
-    // Highlight active navigation link while scrolling
-    window.addEventListener('scroll', function () {
+    // **Highlight active nav link while scrolling**
+    window.addEventListener("scroll", function () {
         let fromTop = window.scrollY;
 
         navLinks.forEach(link => {
-            if (link.hash) {
-                let section = document.querySelector(link.hash);
-                if (section) {
-                    if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-                        link.classList.add('menuactive');
-                    } else {
-                        link.classList.remove('menuactive');
-                    }
+            let section = document.querySelector(link.hash);
+            if (section) {
+                if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                    link.classList.add("menuactive");
+                } else {
+                    link.classList.remove("menuactive");
                 }
             }
         });
 
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-        if (currentScroll > lastScrollTop && currentScroll > navbar.offsetHeight) {
-            navbar.style.top = `-${navbar.offsetHeight}px`;
-        } else if (currentScroll < lastScrollTop && currentScroll <= navbar.offsetHeight) {
-            navbar.style.top = "0";
+        // **Sticky Navbar**
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
         }
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
+    // **Dynamic Title Change on Section Scroll**
+    const sections = document.querySelectorAll("section");
+    window.addEventListener("scroll", function () {
+        let currentSection = "";
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.scrollY >= sectionTop - 100) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+        if (currentSection) {
+            document.title = currentSection.charAt(0).toUpperCase() + currentSection.slice(1);
+        }
+    });
+
+    // **Owl Carousel Initialization**
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+        }
+    });
+
+    // **Fixing Carousel Dot Functionality**
+    const dots = document.querySelectorAll(".owl-dot");
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            $(".owl-carousel").trigger("to.owl.carousel", [index, 400]);
+        });
     });
 });
 
-// Add a minimal export to make this a valid ES Module
-export {};
+
+document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    link.addEventListener('click', function(event) {
+        window.open(this.href, '_blank');
+    });
+});
