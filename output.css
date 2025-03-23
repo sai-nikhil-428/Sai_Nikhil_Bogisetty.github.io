@@ -2759,3 +2759,426 @@ lottie-player {
   width: 100%;
   height: 600px; /* Adjust this value to increase/decrease Lottie height */
 }
+
+.linkedin-link {
+  transition: transform 0.3s ease-in-out;
+}
+
+.linkedin-link:hover {
+  transform: scale(1.1);
+}
+
+/* General styling for the teams section */
+.teams {
+  background-color: #111; /* Matches the dark background in the image */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.teams .title {
+  text-align: center; /* Ensure "Friends" is centered */
+  display: block; /* Make sure it behaves as a block */
+  margin-bottom: 5px; /* Adjust spacing */
+  position: relative;
+}
+
+.teams .subtitle {
+  text-align: center; /* Center the subtitle */
+  display: block;
+  font-size: 18px; /* Adjust size if needed */
+  font-weight: 500;
+  margin-top: 5px; /* Remove extra spacing */
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.subtitle::before,
+.subtitle::after {
+  content: "—";
+  margin: 0 10px;
+}
+
+.teams .title::after {
+  content: ""; /* Remove inline content */
+}
+
+/* Friends Section Styling */
+.teams .title::after {
+  content: "Talented Ones";
+  display: block;  /* Places it on the next line */
+  text-align: center; /* Ensures it's centered */
+  font-size: 25px; /* Adjust size */
+  font-weight: 500;
+  margin-top: 8px; /* Add some space */
+  margin-bottom: 20px; /* Increase space below */
+  color: #fff; /* Match your theme */
+}
+
+.teams .carousel .card {
+  background: #222;
+  border-radius: 8px;
+  padding: 50px 50px;  /* Increased padding for larger size */
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  width: 320px; /* Increased width */
+  height: 420px; /* Increased height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teams .carousel .card:hover {
+  background:#333;
+} 
+
+.teams .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover .box {
+  transform: scale(1.25);
+}
+
+.teams .carousel .card .text {
+  font-size: 26px; /* Slightly increased */
+  font-weight: 600;
+  margin: 12px 0 8px 0;
+}
+
+.teams .carousel .card img {
+  height: 160px; /* Slightly larger */
+  width: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid darkcyan; /* Thicker border */
+  transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img {
+  border-color: #fff;
+}
+
+/* Ensure proper spacing between carousel items */
+.owl-carousel .owl-stage {
+  display: flex;
+  gap: 25px; /* Increased space between cards */
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* Owl Dots Styling */
+.owl-dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 6px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid darkcyan !important;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin-top: 30px; /* Increase this value to move it further down */
+}
+
+.owl-dot.active {
+  width: 36px;
+  border-radius: 14px;
+  background: darkcyan !important; /* Active state remains darkcyan */
+}
+
+/* Change dot color to gray on hover */
+.owl-dot:hover {
+  background: gray !important;
+}
+
+
+.contact {
+  width: 100%;
+  padding: 50px 0;
+  background: #fff; /* Ensure the background is white */
+}
+
+.contact .max-width {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.contact .contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact .title::after {
+  content: "Get In Touch";
+  display: block;
+  font-size: 18px;
+  color: darkcyan;
+  margin-top: 5px;
+}
+
+/* Adjust column widths */
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+/* Text alignment fix */
+.contact .contact-content .left p {
+  text-align: left;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+/* Navigation */
+nav {
+  background: #008080;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav .max-width {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav .logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .menu {
+  list-style: none;
+  display: flex;
+}
+
+nav .menu li {
+  margin: 0 15px;
+}
+
+nav .menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav .menu li a.active {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.contact .max-width {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Title Styling */
+.contact .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact .title::after {
+  content: "Get In Touch";
+  display: block;
+  font-size: 18px;
+  color: darkcyan;
+  margin-top: 5px;
+}
+
+/* Contact Content Layout */
+.contact .contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+/* Left Side */
+.contact .contact-content .left p {
+  text-align: left;
+}
+
+.contact .contact-content .icons {
+  margin: 20px 0;
+}
+
+/* Contact Information Rows */
+.contact .contact-content .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: darkcyan;
+}
+
+.contact .contact-content .row .info {
+  margin-left: 20px;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Right Side - Form */
+.contact .right form {
+  width: 100%;
+}
+
+/* Input Fields */
+.contact .right form .fields {
+  display: flex;
+  gap: 10px;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+  height: 100px;
+  width: 100%;
+}
+
+/* Input and Textarea Styling */
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Button Styling */
+.contact .right form .button-area {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact .right form .button-area button {
+  background: darkcyan;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact .right form .button-area button:hover {
+  background: none;
+  color: darkcyan;
+  border: 2px solid darkcyan;
+}
+
+/* Contact Content Layout */
+.contact-content {
+  display: flex;
+  justify-content: space-between; /* Pushes sections apart */
+  align-items: center; /* Centers vertically */
+  width: 100%;
+}
+
+/* Left Section */
+.left {
+  width: 45%; /* Adjust width */
+}
+
+/* Right Section */
+.right {
+  width: 45%; /* Same width as left */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto; /* Ensures it aligns to the right */
+}
+
+/* Footer Section Styling */
+footer {
+  background: #fff;
+  padding: 20px 30px; /* Increased padding for better spacing */
+  color: #fff;
+  text-align: center;
+  font-size: 1rem; /* Adjust font size if needed */
+}
+
+/* Footer Link Styling */
+footer span a {
+  color: darkcyan;
+  text-decoration: none;
+  font-weight: 500; /* Optional: Make it slightly bolder */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+  color: lightcyan; /* Slight color change on hover */
+}
