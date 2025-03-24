@@ -113,3 +113,85 @@ document.querySelectorAll('a[target="_blank"]').forEach(link => {
         window.open(this.href, '_blank');
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (typeof Typed !== "undefined") {
+        new Typed(".typing-text", {
+            strings: [
+                " Sai Nikhil Bogisetty",
+                "currently located in Leawood , Kansas, USA",
+                "an ETL Automation Test Lead",
+                "a ISTQB Certified Tester"
+            ],
+            typeSpeed: 90,
+            backSpeed: 90,
+            startDelay: 500,
+            backDelay: 1000,
+            loop: true,
+            showCursor: false
+        });
+
+        // Custom Blinking Cursor
+        function blinkCursor() {
+            const cursor = document.querySelector(".cursor");
+            setInterval(() => {
+                cursor.style.visibility = cursor.style.visibility === "hidden" ? "visible" : "hidden";
+            }, 500);
+        }
+        blinkCursor();
+    } else {
+        console.error("Typed.js is not loaded.");
+    }
+});
+
+// Dark Mode Toggle Script 
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleButton = document.getElementById("dark-mode-toggle");
+            const body = document.body;
+            const textElements = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, a"); // Select text elements
+    
+            // Function to apply dark mode styles
+            function applyDarkMode() {
+                body.classList.add("dark");
+                textElements.forEach(el => el.classList.add("dark-text"));
+                localStorage.setItem("dark-mode", "enabled");
+            }
+    
+            // Function to remove dark mode styles
+            function removeDarkMode() {
+                body.classList.remove("dark");
+                textElements.forEach(el => el.classList.remove("dark-text"));
+                localStorage.setItem("dark-mode", "disabled");
+            }
+    
+            // Check for saved mode preference
+            if (localStorage.getItem("dark-mode") === "enabled") {
+                applyDarkMode();
+            }
+    
+            // Toggle Dark Mode on button click
+            toggleButton.addEventListener("click", function () {
+                if (body.classList.contains("dark")) {
+                    removeDarkMode();
+                } else {
+                    applyDarkMode();
+                }
+            });
+        });
+
+
+// Sidebar variables
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+// Sidebar toggle functionality for mobile
+sidebarBtn.addEventListener("click", function () {
+  sidebar.classList.toggle("active");
+
+  // Ensure smooth height transition
+  if (sidebar.classList.contains("active")) {
+    sidebar.style.maxHeight = sidebar.scrollHeight + "px";
+  } else {
+    sidebar.style.maxHeight = "112px"; // Default collapsed height
+  }
+});
