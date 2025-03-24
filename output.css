@@ -434,6 +434,273 @@ progress {
   vertical-align: baseline;
 }
 
+
+/* General Button Styling */
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: darkcyan;
+  color: #fff; /* White text */
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 2px solid darkcyan;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover Effect */
+.custom-button:hover {
+  background: gray; /* Turns gray on hover */
+  color: white; /* Text stays white */
+  border-color: gray;
+}
+
+.custom-button:hover svg {
+  fill: white; /* Icons stay white */
+}
+
+/* General Button Styling */
+.custom-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: darkcyan;
+  color: #fff;
+  font-size: 14px; /* Smaller text */
+  font-weight: 500;
+  padding: 8px 16px; /* Smaller padding */
+  border-radius: 6px;
+  border: 2px solid darkcyan;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Hover Effect */
+.custom-button:hover {
+  background: gray;
+  color: white;
+  border-color: gray;
+}
+
+.custom-button:hover svg {
+  fill: white;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: absolute;
+  right: 40px; /* Adjusted for better alignment */
+  top: 160px; /* Lowered to prevent overlap */
+  width: 320px; /* Reduced width */
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Avatar Box - Centered */
+.avatar-box {
+  background: #2a2a2a;
+  border-radius: 14px;
+  padding: 8px;
+  width: 75px; /* Smaller */
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-box img {
+  width: 65px; /* Smaller */
+  height: 65px;
+  border-radius: 12px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Name Text - Smaller */
+.name {
+  color: white;
+  font-size: clamp(12px, 3.5vw, 16px); /* Further reduced */
+  font-weight: bold;
+  margin-top: 6px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  background: #333; /* Dark background */
+  border-radius: 8px; /* Smooth rounded corners */
+  display: inline-block;
+  text-align: center;
+  line-height: 1; /* Tighten spacing */
+}
+
+/* Contact List */
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust spacing */
+}
+
+/* Contact Item - Transparent & Minimal */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+/* Contact Text */
+.contact-text {
+  font-size: 8px;
+  color: white;
+}
+
+.contact-link {
+  font-size: 8px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: -10px; /* Moves it slightly up */
+}
+
+.contact-title {
+  font-size: 8px;
+  color: gray;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px; /* Moves it slightly down */
+}
+
+
+.social-item .social-link:hover { color: var(--light-gray); }
+
+
+/* Icon Box - Transparent */
+.icon-box {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: transparent; /* Remove box */
+  color: gold;
+  font-size: 18px;
+}
+
+/* Contact Title */
+.contact-title {
+  font-size: 12px;
+  /*font-size: 0.75rem;  Smaller */
+  color: gray;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.contact-link, .contact-text {
+  font-size: 0.85rem; /* Reduced */
+  color: white;
+  word-break: break-word;
+}
+
+/* Social Media Icons */
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.social-item .social-link {
+  color: gold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.social-item .social-link:hover {
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    right: 10px;
+    top: 80px;
+    width: 280px; /* Even smaller */
+    padding: 12px;
+  }
+
+  .avatar-box {
+    width: 65px;
+    height: 65px;
+  }
+
+  .name {
+    font-size: clamp(8px, 3vw, 14px);
+  }
+
+  .title {
+    font-size: 0.60rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .social-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    right: 5px;
+    top: 60px;
+    width: 260px;
+    padding: 10px;
+  }
+
+  .avatar-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 0.7rem;
+  }
+
+  .icon-box {
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .contact-text {
+    font-size: 0.6rem;
+  }
+}
+
+
+
 /*
 Correct the cursor style of increment and decrement buttons in Safari.
 */
@@ -591,6 +858,19 @@ object {
   vertical-align: middle;
   /* 2 */
 }
+
+/* <!-- CSS for Blinking Cursor --> */
+    .cursor {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #008080;
+        animation: blink 1s infinite;
+    }
+    
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+
 
 /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
@@ -2819,18 +3099,6 @@ lottie-player {
   content: ""; /* Remove inline content */
 }
 
-/* Friends Section Styling */
-.teams .title::after {
-  content: "Talented Ones";
-  display: block;  /* Places it on the next line */
-  text-align: center; /* Ensures it's centered */
-  font-size: 25px; /* Adjust size */
-  font-weight: 500;
-  margin-top: 8px; /* Add some space */
-  margin-bottom: 20px; /* Increase space below */
-  color: #fff; /* Match your theme */
-}
-
 .teams .carousel .card {
   background: #222;
   border-radius: 8px;
@@ -3182,3 +3450,5 @@ footer span a:hover {
   text-decoration: underline;
   color: lightcyan; /* Slight color change on hover */
 }
+
+
