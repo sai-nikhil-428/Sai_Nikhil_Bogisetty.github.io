@@ -3317,13 +3317,13 @@ lottie-player {
   /* For very small screens (mobile) */
   @media screen and (max-width: 480px) {
     .carousel {
-      padding: 10px 0;
+      padding: 8px 0;
       gap: 8px;
       justify-content: center;
     }
 
     .carousel-item {
-      width: 180px;
+      width: 140px;
     }
 
     .carousel-item .text {
@@ -3334,9 +3334,6 @@ lottie-player {
       font-size: 0.85rem;
     }
   }
-
-
-
 
 /* Owl Dots Styling */
 .owl-dot {
