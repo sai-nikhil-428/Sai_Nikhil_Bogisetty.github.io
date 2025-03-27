@@ -3335,6 +3335,30 @@ lottie-player {
     }
   }
 
+/* For very small screens (Pixel 7 Pro and similar devices) */
+@media screen and (max-width: 412px) {
+  .carousel {
+      padding: 8px 0;
+      gap: 8px;
+      justify-content: center;
+      overflow-x: auto;  /* Allow horizontal scrolling if needed */
+  }
+
+  .carousel-item {
+      width: 180px; /* Adjust width to fit smaller screens */
+      flex-shrink: 0;
+  }
+
+  .carousel-item .text {
+      font-size: 0.9rem; /* Slightly smaller text for better fit */
+  }
+
+  .carousel-item p {
+      font-size: 0.8rem; /* Reduce the paragraph size */
+  }
+}
+
+
 /* Owl Dots Styling */
 .owl-dot {
   height: 14px;
