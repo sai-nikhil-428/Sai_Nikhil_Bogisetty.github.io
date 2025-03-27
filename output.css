@@ -3335,29 +3335,52 @@ lottie-player {
     }
   }
 
-/* For very small screens (Pixel 7 Pro and similar devices) */
+/* For Pixel 7 Pro (max-width: 412px) and similar devices */
 @media screen and (max-width: 412px) {
+  .teams {
+    padding: 0 10px; /* Ensure there's no horizontal overflow */
+  }
+
+  .max-width {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Ensure title scales properly */
+  }
+
   .carousel {
-      padding: 8px 0;
-      gap: 8px;
-      justify-content: center;
-      overflow-x: auto;  /* Allow horizontal scrolling if needed */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
   }
 
   .carousel-item {
-      width: 180px; /* Adjust width to fit smaller screens */
-      flex-shrink: 0;
+    width: 140px; /* Adjust width for smaller screens */
+    flex-shrink: 0;
+    margin-bottom: 15px; /* Space between carousel items */
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 
   .carousel-item .text {
-      font-size: 0.9rem; /* Slightly smaller text for better fit */
+    font-size: 0.9rem; /* Slightly smaller text */
   }
 
   .carousel-item p {
-      font-size: 0.8rem; /* Reduce the paragraph size */
+    font-size: 0.8rem; /* Reduce font size of the description */
   }
 }
-
 
 /* Owl Dots Styling */
 .owl-dot {
