@@ -3339,6 +3339,10 @@ lottie-player {
 @media screen and (max-width: 412px) {
   .teams {
     padding: 0 10px; /* Ensure there's no horizontal overflow */
+    display: flex; /* Add flex to the parent section */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 100%; /* Ensure it takes full width */
   }
 
   .max-width {
@@ -3351,20 +3355,27 @@ lottie-player {
 
   .title {
     font-size: clamp(1.5rem, 5vw, 2rem); /* Ensure title scales properly */
+    text-align: center; /* Ensure text is centered */
   }
 
   .carousel {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the carousel items */
+    align-items: center; /* Vertically center the carousel items */
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 20px;
+    width: 100%; /* Ensure the carousel takes the full width of the container */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
   .carousel-item {
     width: 140px; /* Adjust width for smaller screens */
     flex-shrink: 0;
     margin-bottom: 15px; /* Space between carousel items */
+    display: flex; /* Ensure the item itself is a flex container */
+    justify-content: center; /* Center the content inside the item */
+    align-items: center; /* Vertically center the content */
   }
 
   .carousel-item img {
@@ -3375,10 +3386,22 @@ lottie-player {
 
   .carousel-item .text {
     font-size: 0.9rem; /* Slightly smaller text */
+    text-align: center; /* Center the text */
   }
 
   .carousel-item p {
     font-size: 0.8rem; /* Reduce font size of the description */
+    text-align: center; /* Center the description */
+  }
+
+  /* Ensure the card and box inside carousel-item are also centered */
+  .carousel-item .card,
+  .carousel-item .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
 
