@@ -131,7 +131,7 @@ section {
 }
 @media (max-width: 640px) {
   section {
-    margin: 8px; /* Slightly reduced for mobile */
+    margin: 6px; /* Slightly reduced for mobile */
   }
 }
 
@@ -140,7 +140,7 @@ section {
     margin: 16px; /* Adjusted for consistency */
   }
   .title-name {
-    font-size: 2.25rem; /* Adjusted to 36px for medium screens */
+    font-size: 1.25rem; /* Adjusted to 36px for medium screens */
   }
   .title-description {
     font-size: 1.125rem; /* Adjusted to 18px for medium screens */
@@ -238,6 +238,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   /* 1 */
   line-height: inherit;
   /* 2 */
@@ -489,21 +490,37 @@ progress {
   fill: white;
 }
 
+
+ /* Main content wrapper to ensure no overlap */
+ .main-content {
+  margin-right: 320px; /* Adjust according to the sidebar width */
+  padding: 20px;
+}
+
 /* Sidebar Styling */
 .sidebar {
   position: absolute;
   right: 40px; /* Adjusted for better alignment */
   top: 160px; /* Lowered to prevent overlap */
   width: 320px; /* Reduced width */
-  background-color: #1e1e1e;
+  /*background-color: #1e1e1e; */
+  background-color: #333;
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+  /*overflow: hidden;*/
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+  /* Sidebar info section */
+  .sidebar-info {
+    text-align: center;
+    padding: 10px 5%;
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+  }
 
 /* Avatar Box - Centered */
 .avatar-box {
@@ -523,6 +540,11 @@ progress {
   border-radius: 12px;
   object-fit: cover;
   max-width: 100%;
+}
+
+/* Title and subtitle styles */
+.info-content h1 {
+  font-size: 22px;
 }
 
 /* Name Text - Smaller */
@@ -545,7 +567,10 @@ progress {
   display: inline-block;
   text-align: center;
   line-height: 1; /* Tighten spacing */
+  width: fit-content;
+  margin: 0 auto 20px;
 }
+
 
 /* Contact List */
 .contacts-list {
@@ -633,73 +658,130 @@ progress {
   color: white;
 }
 
-/* Responsive Design */
+
+/* Media queries for responsiveness */
+
+/* Small screens (Mobile phones) */
+@media screen and (max-width: 480px) {
+  .sidebar {
+    width: 100%; /* Full width for mobile screens */
+    position: static; /* Sidebar flows with content */
+    height: auto; /* Allow the sidebar to adjust to content height */
+  }
+
+  .main-content {
+    margin-right: 0; /* Remove margin on small screens */
+  }
+
+  /* Adjust the font size for mobile */
+  .sidebar-info {
+    font-size: clamp(0.8rem, 4vw, 1rem);
+  }
+
+  .info-content h1 {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+}
+
+/* Medium screens (Tablets) */
 @media screen and (max-width: 768px) {
   .sidebar {
-    right: 10px;
-    top: 80px;
-    width: 280px; /* Even smaller */
-    padding: 12px;
+    width: 250px; /* Slightly smaller sidebar for tablets */
   }
 
-  .avatar-box {
-    width: 65px;
-    height: 65px;
+  .main-content {
+    margin-right: 260px; /* Adjust margin to match new sidebar width */
   }
 
-  .name {
-    font-size: clamp(8px, 3vw, 14px);
+  /* Adjust the font size for tablets */
+  .sidebar-info {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
   }
 
-  .title {
-    font-size: 0.60rem;
-  }
-
-  .contact-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-    padding: 6px;
-  }
-
-  .social-list {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar {
-    right: 5px;
-    top: 60px;
-    width: 260px;
-    padding: 10px;
-  }
-
-  .avatar-box {
-    width: 60px;
-    height: 60px;
-  }
-
-  .name {
-    font-size: 10px;
+  .info-content h1 {
+    font-size: 20px;
   }
 
   .title {
-    font-size: 0.7rem;
-  }
-
-  .icon-box {
     font-size: 14px;
-    width: 28px;
-    height: 28px;
-  }
-
-  .contact-text {
-    font-size: 0.6rem;
   }
 }
 
+/* Large screens (Desktops) */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    width: 300px; /* Default sidebar width */
+  }
 
+  .main-content {
+    margin-right: 320px; /* Match sidebar width */
+  }
+
+  /* Adjust font size for large screens */
+  .sidebar-info {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+
+  .info-content h1 {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+}
+
+/* Extra-large screens (Large desktops) */
+@media screen and (min-width: 1440px) {
+  .sidebar {
+    width: 320px; /* Sidebar can be a bit wider on large screens */
+  }
+
+  .main-content {
+    margin-right: 340px; /* Adjust the main content margin for larger sidebar */
+  }
+
+  /* Adjust font sizes for very large screens */
+  .sidebar-info {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+  }
+
+  .info-content h1 {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}
+
+/* Ultra-wide screens (4K and beyond) */
+@media screen and (min-width: 2560px) {
+  .sidebar {
+    width: 350px; /* Wider sidebar for ultra-wide screens */
+  }
+
+  .main-content {
+    margin-right: 360px; /* Adjust the main content margin for wider sidebar */
+  }
+
+  /* Further font size adjustments for ultra-wide screens */
+  .sidebar-info {
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  }
+
+  .info-content h1 {
+    font-size: 26px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
 
 /*
 Correct the cursor style of increment and decrement buttons in Safari.
@@ -3055,6 +3137,17 @@ lottie-player {
   text-align: center;
 }
 
+.teams p {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  border: none;
+  margin-top: 10px;
+}
+
 .max-width {
   max-width: 1200px;
   margin: 0 auto;
@@ -3158,6 +3251,92 @@ lottie-player {
   display: flex;
   justify-content: center;
 }
+
+ /* Styling for each carousel item (card) */
+/* Media Queries for responsiveness */
+  /* For large screens (desktop) */
+  @media screen and (min-width: 1024px) {
+    .carousel {
+      justify-content: center;
+      padding: 20px 0;
+    }
+
+    .carousel-item {
+      width: 300px;
+    }
+
+    .carousel-item .text {
+      font-size: 1.4rem;
+    }
+
+    .carousel-item p {
+      font-size: 1.1rem;
+    }
+  }
+
+  /* For tablets and medium screens */
+  @media screen and (max-width: 1024px) {
+    .carousel {
+      padding: 15px 0;
+    }
+
+    .carousel-item {
+      width: 280px;
+    }
+
+    .carousel-item .text {
+      font-size: 1.2rem;
+    }
+
+    .carousel-item p {
+      font-size: 1rem;
+    }
+  }
+
+  /* For mobile and small screens */
+  @media screen and (max-width: 768px) {
+    .carousel {
+      padding: 10px 0;
+      gap: 10px;
+      justify-content: space-around;
+    }
+
+    .carousel-item {
+      width: 220px;
+    }
+
+    .carousel-item .text {
+      font-size: 1.1rem;
+    }
+
+    .carousel-item p {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* For very small screens (mobile) */
+  @media screen and (max-width: 480px) {
+    .carousel {
+      padding: 10px 0;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .carousel-item {
+      width: 180px;
+    }
+
+    .carousel-item .text {
+      font-size: 1rem;
+    }
+
+    .carousel-item p {
+      font-size: 0.85rem;
+    }
+  }
+
+
+
 
 /* Owl Dots Styling */
 .owl-dot {
@@ -3450,5 +3629,3 @@ footer span a:hover {
   text-decoration: underline;
   color: lightcyan; /* Slight color change on hover */
 }
-
-
