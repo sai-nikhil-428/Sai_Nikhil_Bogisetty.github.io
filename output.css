@@ -3338,24 +3338,28 @@ lottie-player {
 /* For Pixel 7 Pro (max-width: 412px) and similar devices */
 @media screen and (max-width: 412px) {
   .teams {
-    padding: 0 10px; /* Ensure there's no horizontal overflow */
-    display: flex; /* Add flex to the parent section */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    width: 100%; /* Ensure it takes full width */
+    padding: 10px 0 !important; /* Override the inline 5% padding to ensure equal spacing */
+    margin: 0 auto; /* Ensure the section is centered */
+    width: 100%; /* Take full width of the screen */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-sizing: border-box; /* Ensure padding is included in the width */
   }
 
   .max-width {
     width: 100%;
+    max-width: 100%; /* Ensure it doesn't exceed the parent */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Center children vertically */
+    justify-content: center; /* Center children horizontally */
+    padding: 0; /* Remove any extra padding that might offset centering */
   }
 
   .title {
     font-size: clamp(1.5rem, 5vw, 2rem); /* Ensure title scales properly */
-    text-align: center; /* Ensure text is centered */
+    text-align: center; /* Center the title text */
   }
 
   .carousel {
@@ -3366,13 +3370,15 @@ lottie-player {
     flex-wrap: wrap;
     margin-top: 20px;
     width: 100%; /* Ensure the carousel takes the full width of the container */
+    max-width: 100%; /* Prevent it from exceeding the parent */
+    padding: 0; /* Remove any padding that might offset centering */
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 
   .carousel-item {
     width: 140px; /* Adjust width for smaller screens */
     flex-shrink: 0;
-    margin-bottom: 15px; /* Space between carousel items */
+    margin: 0 auto 15px auto; /* Center the item with equal margins on left and right */
     display: flex; /* Ensure the item itself is a flex container */
     justify-content: center; /* Center the content inside the item */
     align-items: center; /* Vertically center the content */
@@ -3394,15 +3400,26 @@ lottie-player {
     text-align: center; /* Center the description */
   }
 
-  /* Ensure the card and box inside carousel-item are also centered */
-  .carousel-item .card,
-  .carousel-item .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
+/* Ensure the card and box inside carousel-item are also centered */
+.carousel-item .card,
+.carousel-item .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Override any Owl Carousel styles that might interfere with centering */
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
 }
 
 /* Owl Dots Styling */
